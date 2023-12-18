@@ -1,0 +1,35 @@
+﻿<Window x:Class="Курсоваябебе.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Курсоваябебе"
+        mc:Ignorable="d"
+        Title="АШАЛЕТЬ МЕМЫ" Height="574" Width="962">
+    <Grid Background="#FF8A2E9B">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="450*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="meme_list" Margin="679,24,7,229" Background="{x:Null}" Foreground="White" FontSize="20" BorderBrush="#FF264E89" SelectionChanged="meme_list_SelectionChanged" Grid.Column="3"/>
+        <Image x:Name="meme_img" HorizontalAlignment="Left" Height="359" Margin="173,10,0,0" VerticalAlignment="Top" Width="463" Stretch="Fill" Grid.Column="3"/>
+        <ComboBox x:Name="meme_categories" HorizontalAlignment="Left" Margin="652,387,0,0" VerticalAlignment="Top" Width="188" Height="40" FontSize="20" BorderBrush="#FF7093FF" SelectionChanged="meme_categories_SelectionChanged" Grid.Column="3"/>
+        <Label Content="Поиск мема" HorizontalAlignment="Left" Margin="652,431,0,0" VerticalAlignment="Top" Height="40" Width="188" FontSize="24" Foreground="White" Grid.Column="3"/>
+        <TextBox x:Name="meme_find" HorizontalAlignment="Left" Margin="652,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Height="40" FontSize="20" BorderBrush="#FF7093FF" Grid.Column="3"/>
+        <Label Content="Категории&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="188" FontSize="24" Foreground="White" Margin="652,345,0,0" Grid.Column="3"/>
+        <Button x:Name="memedel" Content="удалить " HorizontalAlignment="Left" Margin="2,382,0,0" VerticalAlignment="Top" Height="37" Width="171" FontSize="22" Background="#FFB81BAF" Foreground="White" BorderBrush="#FF7093FF" Click="memedel_Click" Grid.ColumnSpan="4"/>
+        <Button x:Name="memedown" Content="загрузить" HorizontalAlignment="Left" Margin="2,465,0,0" VerticalAlignment="Top" Height="36" Width="171" FontSize="22" Background="#FF520D62" Foreground="White" BorderBrush="#FF7093FF" Click="memedown_Click" Grid.ColumnSpan="4"/>
+        <Button x:Name="memesave" Content="сохранить" HorizontalAlignment="Left" Margin="2,423,0,0" VerticalAlignment="Top" Height="37" Width="171" FontSize="22" Background="#FF7D2689" Foreground="White" BorderBrush="#FF7093FF" Click="memesave_Click" Grid.ColumnSpan="4"/>
+        <Button x:Name="find_mem" Content="OK" HorizontalAlignment="Left" Margin="706,515,0,0" VerticalAlignment="Top" Height="40" Width="80" FontSize="20" Click="find_mem_Click" Grid.Column="3"/>
+        <Label Content="Добавить тег" HorizontalAlignment="Left" Margin="120,384,0,0" VerticalAlignment="Top" Height="39" Width="153" FontSize="24" Foreground="White" Grid.Column="3"/>
+        <TextBox x:Name="meme_add_tag" HorizontalAlignment="Left" Margin="120,423,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Height="37" FontSize="20" BorderBrush="#FF7093FF" Grid.Column="3"/>
+        <Label Content="Поиск по тегу" HorizontalAlignment="Left" Margin="120,467,0,0" VerticalAlignment="Top" Height="39" Width="153" FontSize="24" Foreground="White" Grid.Column="3"/>
+        <TextBox x:Name="meme_find_by_tag" HorizontalAlignment="Left" Margin="120,506,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Height="37" FontSize="20" BorderBrush="#FF7093FF" Grid.Column="3"/>
+        <Button x:Name="findmemtag" Content="OK" HorizontalAlignment="Left" Margin="292,508,0,0" VerticalAlignment="Top" Height="37" Width="65" FontSize="20" Click="findmemtag_Click" Grid.Column="3"/>
+        <Button x:Name="addtag" Content="OK" HorizontalAlignment="Left" Margin="292,423,0,0" VerticalAlignment="Top" Height="37" Width="65" FontSize="20" Click="addtag_Click" Grid.Column="3"/>
+
+    </Grid>
+</Window>
+
